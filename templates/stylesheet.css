@@ -1,0 +1,599 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+:root {
+    --elements-border: 2px solid #E8E8E8;
+    --atec-color: #004166;
+    --bg-color: #F8F8F8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-color);
+}
+
+#site {
+    font-family: Arial;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*----------------------------->>>>LOGIN<<<<-------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+.login-box {
+    position: absolute;
+    width: 430px;
+    height: 350px;
+    left: 50%;
+    margin-left: -215px;
+    top: 50%;
+    margin-top: -195px;
+    border: 1px solid gray;
+    -webkit-box-shadow: 1px 1px 1px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    1px 1px 1px rgba(50, 50, 50, 0.77);
+    box-shadow:         2px 2px 2px rgba(50, 50, 50, 0.77);
+}
+
+.logo-login {
+    position: absolute;
+    left: 142px;   
+    top: 20px;
+}
+
+.pass-box {
+    position: absolute;
+    width: 140px;
+    height: 35px;
+    left: 145px;
+    top: 200px;
+    font-size: 16px;
+    font-family:Verdana,sans-serif;
+}
+
+.botao-logar {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    left: 165px;
+    top: 250px;
+    background: var(--atec-color);
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botao-logar:hover {
+    opacity: 0.8;
+    width: 108px;
+    height: 44px;
+    margin-left: -4px;
+    margin-top: -2px;
+    font-size: 17px;
+}
+
+.botao-logar:active {
+    opacity: 0.7;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*------------------------------>>>>MENU<<<<-------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+#menu {
+    top: 0px;
+    position: fixed;
+    background: white;
+    width: 250px;
+    height: 100%;
+    -webkit-box-shadow: 1px 1px 1px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    1px 1px 1px rgba(50, 50, 50, 0.77);
+    box-shadow:         2px 2px 2px rgba(50, 50, 50, 0.77);
+}
+
+#logo {
+    background: white;
+    height: 200px;
+    border-bottom: var(--elements-border);
+}
+
+#logo img {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+#menu-list {
+    list-style-type: none;
+}
+
+#menu-list div {
+    height: 60px;
+}
+
+.menu-icon {
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 12px;
+}
+
+#menu-list a {
+    text-align: center;
+    width: 250px;
+    height: 60px;
+    display: block;
+    line-height: 60px;
+    color: #787878;
+    text-decoration: none;
+    border-bottom: var(--elements-border);
+}
+
+#menu-list a:hover {
+    background: #E8E8E8;
+}
+
+#menu-list a:active {
+    background: #F5F5F5;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*----------------------------->>>>TITLE<<<<------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+#title {                               
+    position: fixed;
+    background: var(--bg-color);
+    top: 0px;
+    height: 70px;
+    width: calc(100% - 540px);
+    min-width: 800px;
+    margin-left: 270px;
+    border-bottom: var(--elements-border);
+    overflow: hidden;
+}
+
+#title p {
+    line-height: 70px;
+    margin-left: 10px;
+    font-size: 30px;
+    color: #787878;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*----------------------------->>>>BOTTOM<<<<------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+#footer {
+    position: fixed;
+    background: var(--bg-color);
+    bottom: 0px;
+    height: 50px;
+    width: calc(100% - 540px);
+    min-width: 800px;
+    margin-left: 270px;
+    border-top: var(--elements-border);
+}
+
+#footer p {
+    text-align: center;
+    line-height: 50px;
+    color: #787878;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*-------------------------->>>>CONTENT EMPRESAS<<<<-----------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+#content {
+    margin-left: 270px;
+    margin-top: 90px;
+    margin-bottom: 70px;
+}
+
+#result {
+    display: table;
+}
+
+.tittle-result {
+    display: table;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#tFantasia, #tRsocial, #tAtivos {
+    display: block;
+    float: left;
+}
+
+#tFantasia {
+    width: 200px;
+    padding-left: 15px;
+}
+
+#tRsocial {
+    padding-left: 15px;
+    width: 350px;
+}
+
+#tAtivos {
+    width: 80px;
+    padding-left: 20px;
+}
+
+.list-result {
+    height: 60px;
+    border-bottom: var(--elements-border);
+}
+
+.empresa-cell {
+    display: block;
+    float: left;
+    padding-left: 15px;
+    line-height: 60px;
+    font-size: 16px;
+    height: 60px;
+}
+
+#fantasia {
+    width: 200px;
+    overflow: hidden;
+}
+
+#razao {
+    width: 350px;
+    overflow: hidden;
+}
+
+#ativos {
+    width: 80px;
+    text-align: center;
+}
+
+#devices {
+    width: 140px;
+}
+
+.viewDevices {
+    cursor: pointer;
+    color: white;
+}
+
+.viewDevices {
+    padding: 10px;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    background: var(--atec-color);
+}
+
+.viewDevices:hover {
+    width: 124px;
+    height: 42px;
+    margin-left: -2px;
+    font-size: 16.5px;
+    opacity: 0.85;
+}
+
+.viewDevices:active {
+    opacity: 0.8;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*-------------------------->>>>CONTENT DEVICES<<<<------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+.device-cell {
+    display: block;
+    float: left;
+    line-height: 60px;
+    padding-left: 15px;
+    height: 60px
+}
+
+#nomeEnt {
+    width: 200px;
+    overflow: hidden;
+}
+
+#appVersao {
+    width: 150px;
+    overflow: hidden;
+}
+
+#ultLogin {
+    width: 200px;
+    overflow: hidden;
+}
+
+#devAtivo {
+    width: 100px;
+    overflow: hidden;
+}
+
+#tEntregador, #tVersaoApp, #tUltLogin, #tAtivo {
+    display: block;
+    float: left;
+    padding-left: 15px;
+}
+
+#tEntregador {
+    width: 200px;
+}
+
+#tVersaoApp {
+    width: 150px;
+}
+
+#tUltLogin {
+    width: 200px;
+}
+
+#tAtivo {
+    width: 100px;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*----------------------->>>>DADOS DO DISPOSITIVO<<<-----------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+.dadosDevice input {
+    font-size: 18px;
+    width: 200px;
+    height: 40px;
+    padding-left: 5px;
+    display: block;
+}
+
+.dadosDevice label {
+    font-size: 16px;
+}
+
+#entregador {
+    width: 350px;
+}
+
+#uuid {
+    width: 350px;
+}
+
+#devModelo {
+    width: 350px;
+}
+
+#app {
+    width: 100px;
+}
+
+#campoStatus select {
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+}
+
+#campoEntregador {
+    display: block;
+    float: left;
+}
+
+#campoAtivacao {
+    display: block;
+    float: right;
+    margin-left: 20px;
+}
+
+#campoUUID {
+    display: block;
+    float: left;
+}
+
+#campoUltLogin {
+    display: block;
+    float: right;
+}
+
+#campoPlat {
+    display: block;
+    float: right;
+}
+
+#campoModelo {
+    display: block;
+    float: left;
+}
+
+#campoApp {
+    display: block;
+    float: left;
+}
+
+#campoStatus {
+    display: block;
+    float: right;
+}
+
+#grupo5 {
+    position: absolute;
+    width: 570px;
+    top: 380px;
+}
+
+#botaoVoltar {
+    width: 120px;
+    height: 40px;
+    margin-left: 0px;
+    display: block;
+    float: left;
+    margin-top: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background: #ff4c4c;
+    color: black;
+    border-radius: 5px;
+}
+
+#botaoVoltar:hover {
+    opacity: 0.8;
+    margin-top: 19px;
+    height: 42px;
+    width: 124px;
+    margin-left: -2px;
+}
+
+#botaoVoltar:active {
+    opacity: 0.6;
+}
+
+
+#botaoAltera {
+    width: 120px;
+    height: 40px;
+    margin-right: 2px;
+    display: block;
+    float: right;
+    margin-top: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background: var(--atec-color);
+    color: white;
+    border-radius: 5px;
+}
+
+#botaoAltera:hover {
+    opacity: 0.8;
+    margin-top: 19px;
+    height: 42px;
+    width: 124px;
+    margin-right: 0;
+}
+
+#botaoAltera:active {
+    opacity: 0.6;
+}
+
+.select-status {
+    background: #F3FA96;
+}
+
+.select-status option {
+    background: white;
+}
+
+#result-msg {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*----------------------------->>>>SIDEBAR<<<------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+#sidebar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 250px;
+    height: 100%;
+    display: table;
+}
+
+.campo-logout .notification {
+    display: block;
+    float: bottom;
+}
+
+
+.campo-logout {
+    height: 70px;
+    width: 250px;
+    padding: 15px;
+}
+
+.div-logout {
+    background: #ff4c4c;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 0px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 1px 1px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    1px 1px 1px rgba(50, 50, 50, 0.77);
+    box-shadow:         2px 2px 2px rgba(50, 50, 50, 0.77);
+}
+
+.div-logout:hover {
+    width: 156px;
+    margin-left: 37px;
+    height: 44px;
+    margin-top: -2px;
+    line-height: 44px;
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+.div-logout:active {
+    opacity: 0.8;
+}
+
+.link-logout {
+    text-decoration: none;
+    color: black;
+}
+
+#totalizador {
+    background: var(--bg-color);
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 210px;
+    height: 150px;
+    padding-top: 30px;
+    padding-left: 10px;
+    border: var(--elements-border);
+    -webkit-box-shadow: 1px 1px 1px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    1px 1px 1px rgba(50, 50, 50, 0.77);
+    box-shadow:         2px 2px 2px rgba(50, 50, 50, 0.77);
+}
+
+#totalizador h3 {
+    color: var(--atec-color);
+    text-align: center;
+    font-weight: bold;
+}
+
+#pAtivos {
+    color: green;
+}
+
+#pInativos {
+    color: tomato;
+}
+
