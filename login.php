@@ -1,6 +1,7 @@
 <?php 
 	session_start();
 	
+	//Autenticação de login utilizando Session, pois no momento não sabia mexer com CRUD de usuário
 	function auth_login($password){
 		if($password=="232430"){
 			$_SESSION['logon'] = "LOGADO";
